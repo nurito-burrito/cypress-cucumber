@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import { PageElements } from "../../../pageObjects/PageElements";
+import { PageElements } from "../../../PageObjects/PageElements";
 
 const pageElements = new PageElements();
 
