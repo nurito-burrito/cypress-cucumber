@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import { PageElements } from "../../../pageObjects/pageElements";
+import { PageElements } from "../../../pageObjects/PageElements";
 
 const pageElements = new PageElements();
 
@@ -25,8 +25,6 @@ Then("I find total four items listed in my cart", () => {
 When("I search and remove the lowest price item", () => {
   removeLowestPricedItem();
 });
-
-// When("I am able to remove the lowest price item from my cart", function () {});
 
 Then("I am able to verify three items in my cart", () => {
   pageElements.itemRemoveButton.should("have.length", 3);
